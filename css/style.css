@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Raleway";
+}
+
+/* navbar */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar {
+    background: #f97300;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    background: #f4f4f4;
+    color: #f97300;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    background: #fff !important;
+}
+
+/* header */
+.header {
+    background-image: url("../image/Photo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+
+.description h1 {
+    color: #f97300;
+}
+
+.description p {
+    color: #666;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.description button {
+    border: 1px solid #f97300;
+    background: #f97300;
+    color: #fff;
+}
+
+/* Accordion */
+.accordion a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.collapsible-link::before {
+    content: "";
+    width: 14px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
+    display: block;
+    transition: all 0.3s;
+}
+
+.collapsible-link::after {
+    content: "";
+    width: 2px;
+    height: 14px;
+    background: #333;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded="true"]::after {
+    transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded="true"]::before {
+    transform: rotate(180deg);
+}
+
+/* Posts section  */
+.blog {
+    margin: 4em 0;
+    position: relative;
+}
+
+.blog h1 {
+    color: #f97300;
+    margin: 2em;
+}
+
+.blog .card {
+    box-shadow: 0 0 20px #ccc;
+}
+
+.blog .card img {
+    width: 100%;
+    height: 12em;
+}
+
+.blog .card-title {
+    color: #f97300;
+}
+
+.blog .card-body {
+    padding: 1em;
+}
+
+/* Team section */
+.team {
+    margin: 4em 0;
+    position: relative;
+}
+
+.team h1 {
+    color: #f97300;
+    margin: 2em;
+}
+
+.team .item {
+    position: relative;
+}
+
+.team .des {
+    background: #f97300;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 93%;
+    transition: 0.3s ease-in-out;
+}
+
+.team .item:hover .des {
+    height: 100%;
+    background: #f973007d;
+    position: absolute;
+    width: 89%;
+    padding: 5em;
+    top: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Contact form */
+.contact-form {
+    margin: 6em 0;
+    position: relative;
+}
+
+.contact-form h1 {
+    padding: 2em 1px;
+    color: #f97300;
+}
+
+.contact-form .right {
+    max-width: 600px;
+}
+
+.contact-form .right .btn-secondary {
+    background: #f97300;
+    color: #fff;
+    border: 0;
+}
+
+.contact-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
+}
